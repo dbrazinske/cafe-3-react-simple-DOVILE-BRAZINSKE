@@ -1,0 +1,1 @@
+export { default as ServisesCard } from './servises-card';

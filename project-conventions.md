@@ -15,16 +15,6 @@
   * use theme variables if possible, consult otherwise.
   * common components are placed in ./src/components folder
   * if component is used only in single page, then it must be saved in that page folder 'components/'
-  * if component uses more than 4 CSS props, it should be segregated into component
-
-  ## CSS property order
-    * Positioning
-    * Display and complementary props
-    * Dimensions
-    * Box-Model
-    * Color
-    * Text
-    * Other
 }
 
 ## file importing

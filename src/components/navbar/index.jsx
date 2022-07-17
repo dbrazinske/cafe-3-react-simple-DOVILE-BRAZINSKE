@@ -4,6 +4,7 @@ import {
     Box,
     Toolbar,
     IconButton,
+    Typography,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import * as Nav from './components';
@@ -18,9 +19,15 @@ const Navbar = () => {
 
     return (
         <AppBar position="fixed">
-            
+            <Typography
+                component="h1"
+                variant="h3"
+                sx={(theme) => ({ letterSpacing: '0.08em', color: theme.palette.white, display:'flex', justifyContent:'center', my:2})}>
+            Buitinės technikos remontas
+           </Typography>
 
             <Toolbar sx={{ justifyContent: { xs: 'flex-end', sm: 'flex-end', md: 'center' } }}>
+                
                 <IconButton
                     size="large"
                     edge="start"
