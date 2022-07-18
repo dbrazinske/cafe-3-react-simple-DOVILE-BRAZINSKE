@@ -2,16 +2,15 @@ import * as React from 'react';
 import {
   BrowserRouter,
   Routes,
-  Route
+  Route,
 } from 'react-router-dom';
 
-import {Navbar} from './components';
+import { Navbar } from './components';
 
 import HomePage from './pages/home-page';
 import ServicesPage from './pages/services-page';
 import ContactsPage from './pages/contacts-page';
 import ErrorPage from './pages/error-page';
-
 
 const App = () => (
   <BrowserRouter>

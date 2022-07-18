@@ -5,19 +5,25 @@ import {
   Box,
   CardContent,
   CardActions,
-  Button
+  Button,
 } from '@mui/material';
 import { Image, TypographyLimited } from '../../../components';
 
-const ServisesCard = ({ title,img, description }) => (
-  <Card sx={{ display: 'flex', flexDirection: 'column', height: '100%'}}>
+const ServisesCard = ({ title, img, description }) => (
+  <Card sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
 
     <Box sx={{ position: 'relative', width: '100%', pt: '95%' }}>
       <Image src={img} sx={{ position: 'absolute', top: 0, left: 0 }} />
     </Box>
 
     <CardContent sx={{ p: 2, flexGrow: 1 }}>
-      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
+      <Box sx={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        mb: 2,
+      }}
+      >
         <Typography variant="h5" component="div">{title}</Typography>
       </Box>
       <TypographyLimited variant="body2" color="text.secondary">{description}</TypographyLimited>
@@ -28,7 +34,6 @@ const ServisesCard = ({ title,img, description }) => (
     </CardActions>
 
   </Card>
-)
+);
 
-
-export default ServisesCard
+export default ServisesCard;
