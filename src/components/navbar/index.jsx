@@ -21,8 +21,8 @@ const Navbar = () => {
         <AppBar position="fixed">
             <Typography
                 component="h1"
-                variant="h3"
-                sx={(theme) => ({ letterSpacing: '0.08em', color: theme.palette.white, display:'flex', justifyContent:'center', my:2})}>
+                variant="h4"
+                sx={(theme) => ({ letterSpacing: '0.08em', color: 'secondary.light', display: 'flex', justifyContent: 'center', my: 2, fontStyle: 'italic', fontWeight: 'bold' })}>
             Buitinės technikos remontas
            </Typography>
 
