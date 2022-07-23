@@ -4,42 +4,50 @@ import {
   Box,
   Toolbar,
   IconButton,
-  Typography,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Image } from '..';
 import * as Nav from './components';
 
 const pages = [
-  { text: 'Apie mus', to: '/' },
-  { text: 'Paslaugos', to: '/services-page' },
-  { text: 'Kontaktai', to: '/contacts-page' },
+  { text: 'Pagrindinis', to: '/' },
+  { text: 'Paslaugos', to: '/services' },
+  { text: 'Kontaktai', to: '/contacts' },
+  { text: 'Meistro iškvietimas', to: '/call' },
 ];
 
 const Navbar = () => (
   <AppBar position="fixed">
-    <Typography
-      component="h1"
-      variant="h4"
-      sx={{
-        letterSpacing: '0.08em', color: 'secondary.light', display: 'flex', justifyContent: 'center', my: 2, fontStyle: 'italic', fontWeight: 'bold',
-      }}
-    >
-      Buitinės technikos remontas
-    </Typography>
-
-    <Toolbar sx={{ justifyContent: { xs: 'flex-end', sm: 'flex-end', md: 'center' } }}>
+    <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
       <IconButton
         size="large"
         edge="start"
         color="inherit"
-        sx={{ display: { sm: 'none' } }}
-      />
+        sx={{ display: { md: 'none' } }}
+      >
+        <MenuIcon />
+      </IconButton>
+      <Box sx={{
+        alignSelf: 'stretch',
+        height: 64,
+        display: 'flex',
+      }}
+      >
+        <Box>
+          <Image
+            sx={{ p: 1 }}
+            component="img"
+            alt="Logo"
+            src="/Logo.png"
+          />
+        </Box>
 
-      <Box sx={{ display: { xs: 'none', sm: 'none', md: 'flex' }, alignSelf: 'stretch' }}>
-        {pages.map(({ text, to }) => <Nav.Link key={to} to={to}>{text}</Nav.Link>)}
+        <Box sx={{ display: { xs: 'none', md: 'flex' }, alignSelf: 'stretch' }}>
+          {pages.map(({ text, to }) => <Nav.Link key={to} to={to}>{text}</Nav.Link>)}
+        </Box>
+
       </Box>
 
-      <MenuIcon sx={{ display: { md: 'none' } }} />
     </Toolbar>
   </AppBar>
 );
