@@ -13,7 +13,7 @@ const pages = [
   { text: 'Pagrindinis', to: '/' },
   { text: 'Paslaugos', to: '/services' },
   { text: 'Kontaktai', to: '/contacts' },
-  { text: 'Meistro iškvietimas', to: '/call' },
+  { text: 'Meistro iškvietimas', to: '/order' },
 ];
 
 const Navbar = () => (
