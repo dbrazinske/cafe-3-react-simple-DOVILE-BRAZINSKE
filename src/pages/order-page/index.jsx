@@ -13,6 +13,13 @@ import {
   Divider,
   Checkbox,
 } from '@mui/material';
+import CheckboxGroup from '../../components/checkbox-group';
+
+const time = [
+  { id: '1', label: '9:00 iki 12:00' },
+  { id: '2', label: '12:00 iki 16:00' },
+  { id: '3', label: '16:00 iki 19:00' },
+];
 
 const devices = [
   {
@@ -77,6 +84,7 @@ const OrderPage = () => {
   const [device, setDevice] = React.useState(devices[0].value);
   const [service, setService] = React.useState(null);
   const [subscribtion, setSubscribe] = React.useState(true);
+  const [selectedTime, setSelectedTime] = React.useState([]);
 
   return (
     <Box sx={{ pt: 7 }}>
@@ -182,6 +190,13 @@ const OrderPage = () => {
             onChange={(event) => setMessage(event.target.value)}
             value={message}
             fullWidth
+          />
+
+          <CheckboxGroup
+            label="Pasirinkite Jums tinkamiausius laikus "
+            options={time}
+            value={selectedTime}
+            onChange={(_, newColors) => setSelectedTime(newColors)}
           />
 
           <Box sx={{ alignSelf: 'flex-start' }}>
