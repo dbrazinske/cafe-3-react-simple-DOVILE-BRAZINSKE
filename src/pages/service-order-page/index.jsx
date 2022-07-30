@@ -75,7 +75,7 @@ const services = [
   { value: 'cleaning', label: 'Valymas' },
 ];
 
-const OrderPage = () => {
+const ServiceOrderPage = () => {
   const [device, setDevice] = React.useState(devices[0].value);
   const [manufacturer, setManufacturer] = React.useState('Samsung');
   const [manufacturerCode, setManufacturerCode] = React.useState('RB34T600FSA/EF');
@@ -233,4 +233,4 @@ const OrderPage = () => {
   );
 };
 
-export default OrderPage;
+export default ServiceOrderPage;
