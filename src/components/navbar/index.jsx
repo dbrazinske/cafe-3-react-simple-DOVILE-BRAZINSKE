@@ -6,7 +6,7 @@ import {
   IconButton,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import LocalMallIcon from '@mui/icons-material/LocalMall';
 import { useNavigate } from 'react-router-dom';
 import { Image } from '..';
 import * as Nav from './components';
@@ -60,7 +60,7 @@ const Navbar = () => {
           color="inherit"
           onClick={() => navigate('/cart')}
         >
-          <ShoppingBasketIcon />
+          <LocalMallIcon />
         </IconButton>
 
       </Toolbar>
