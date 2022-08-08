@@ -34,7 +34,7 @@ const ServisesCard = ({ title, img, description }) => {
       </CardContent>
 
       <CardActions sx={{ p: 2, alignSelf: 'center' }}>
-        <Button size="medium" variant="contained" onClick={() => navigate('/service-order')}>Užsakyti</Button>
+        <Button size="medium" variant="contained" sx={{ color: 'white' }} onClick={() => navigate('/service-order')}>Užsakyti</Button>
       </CardActions>
 
     </Card>

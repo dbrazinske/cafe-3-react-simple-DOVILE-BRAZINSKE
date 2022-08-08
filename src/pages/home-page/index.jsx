@@ -38,7 +38,7 @@ const HomePage = () => {
           </Box>
           <Box
             sx={{
-              maxWidth: 800,
+              maxWidth: 750,
               zIndex: 5,
             }}
           >
@@ -49,17 +49,36 @@ const HomePage = () => {
               src="/Car-4.png"
             />
           </Box>
-          <Typography variant="h6" sx={(theme) => ({ textAlign: 'center', letterSpacing: '0.08em', color: theme.palette.primary.main })}>
-            Mūsų atliekamas buitinės technikos remontas puikus sprendimas,
-            siekiantiems išsaugoti savo brangų laiką ir finansinę padėtį.
-            Mes – Remontas 123 – stambios ir smulkios buitinės technikos meistrai,
-            dirbantys Šiauliuose bei apylinkėse.
-          </Typography>
+          <Box
+            sx={{
+              backgroundColor: 'rgba(0, 0, 0, 0.2)',
+              p: 3,
+              borderRadius: 3,
+            }}
+          >
+            <Typography
+              variant="h6"
+              sx={(theme) => ({
+                textAlign: 'center',
+                letterSpacing: '0.08em',
+                color: theme.palette.primary.main,
+              })}
+            >
+              Mūsų atliekamas buitinės technikos remontas puikus sprendimas,
+              siekiantiems išsaugoti savo brangų laiką ir finansinę padėtį.
+              Mes – Remontas 123 – stambios ir smulkios buitinės technikos meistrai,
+              dirbantys Šiauliuose bei apylinkėse.
+            </Typography>
 
-          <Box sx={{ display: 'flex', gap: 3 }}>
-            <Button sx={{ color: 'white' }} size="medium" variant="contained" onClick={() => navigate('/services')}>Paslaugos</Button>
-            <Button sx={{ color: 'white' }} size="medium" variant="contained" onClick={() => navigate('/products')}>Naudota buitinė technika</Button>
+            <Box sx={{
+              display: 'flex', justifyContent: 'center', gap: 3, pt: 3,
+            }}
+            >
+              <Button sx={{ color: 'white' }} size="medium" variant="contained" onClick={() => navigate('/services')}>Paslaugos</Button>
+              <Button sx={{ color: 'white' }} size="medium" variant="contained" onClick={() => navigate('/products')}>Naudota buitinė technika</Button>
+            </Box>
           </Box>
+
         </Home.Content>
       </Home.ContentContainer>
     </Box>

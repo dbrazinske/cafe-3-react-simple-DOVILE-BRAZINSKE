@@ -44,10 +44,11 @@ const ProductsCard = ({
       </CardContent>
 
       <CardActions sx={{ p: 1, alignSelf: 'center' }}>
-        <Button size="small" variant="contained">Peržiūrėti</Button>
+        <Button size="small" variant="contained" sx={{ color: 'white' }}>Peržiūrėti</Button>
         <Button
           size="small"
           variant="contained"
+          sx={{ color: 'white' }}
           onClick={() => addToCart(id)}
         >
           Į krepšelį

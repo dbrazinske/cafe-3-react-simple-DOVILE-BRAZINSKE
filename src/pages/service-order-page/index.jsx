@@ -89,16 +89,17 @@ const ServiceOrderPage = () => {
   const [agreement, setAgreement] = React.useState(true);
 
   return (
-    <Box sx={{ pt: 7 }}>
+    <Box sx={{ pt: 7, backgroundImage: 'linear-gradient(to bottom right, #D3D3D3, #2B2B2B)' }}>
       <Paper
         elevation={5}
         sx={{
           mt: 4,
           p: 3,
-          width: 500,
+          maxWidth: 500,
           mx: 'auto',
         }}
       >
+
         <Box
           component="form"
           sx={{

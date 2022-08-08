@@ -41,7 +41,7 @@ const Navbar = () => {
         >
           <Box>
             <Image
-              sx={{ p: 1 }}
+              sx={{ p: 0.2 }}
               component="img"
               alt="Logo"
               src="/Logo.png"

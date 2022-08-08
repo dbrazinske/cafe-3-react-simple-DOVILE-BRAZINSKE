@@ -2,6 +2,9 @@ import { createTheme } from '@mui/material';
 
 const theme = createTheme({
   palette: {
+    background: {
+      default: '#fafafa',
+    },
     primary: {
       main: '#85b227',
     },

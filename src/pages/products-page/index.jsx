@@ -34,7 +34,7 @@ const ProductsPage = () => {
         alignItems: 'center',
         justifyContent: 'center',
         pt: 10,
-        height: 500,
+        minHeight: 500,
         width: '100%',
         textAlign: 'center',
       }}
@@ -43,39 +43,25 @@ const ProductsPage = () => {
         <Typography variant="h5" sx={{ color: 'text.secondary', textAlign: 'center', p: 2 }}>
           LAIKO PATIKRINTA, GERIAUSIŲ GAMINTOJŲ, BUITINĖ TECHNIKA, UŽ ŽENKLIAI MAŽESNĘ KAINĄ!
         </Typography>
-        <Typography variant="h3" sx={{ textAlign: 'center', pb: 2 }}>
-          Šiauliuose bei visoje Šiaulių apskrityje!
+        <Typography variant="h3" sx={{ textAlign: 'center' }}>
+          Naudota buitinė technika Šiauliuose!
         </Typography>
 
         <Box
           sx={{
-            width: 250,
+            maxWidth: 800,
           }}
         >
           <Image
-            sx={{ p: 1 }}
+            sx={{ p: 1, maxHeight: 300 }}
             component="img"
-            alt="Service-car"
+            alt="Electric-appliance"
             src="/electric-appliance.png"
           />
         </Box>
       </Box>
 
       <Services.ContentContainer>
-        <Box sx={{ textAlign: 'center' }}>
-          <Typography sx={{ mt: 10, p: 2, fontSize: 20 }}>
-            Suteikiamos garantijos, visa priežiūra ir servisas, teikiamos atsarginės dalys
-          </Typography>
-
-          <Typography sx={{
-            p: 2,
-            fontSize: 28,
-            color: 'text.primary',
-          }}
-          >
-            Technikos atsargas atnaujiname kiekvieną dieną!
-          </Typography>
-        </Box>
 
         <Grid container spacing={2} sx={{ py: 3, px: 5 }}>
           {usedHouseholdAppliances.map(({
