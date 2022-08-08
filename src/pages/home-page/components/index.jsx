@@ -21,6 +21,7 @@ export const ContentContainer = styled(Box)({
   justifyContent: 'center',
   alignItems: 'center',
   textAlign: 'center',
+
 });
 
 export const Content = styled(Box)(({ theme }) => ({
@@ -32,4 +33,6 @@ export const Content = styled(Box)(({ theme }) => ({
   flexDirection: 'column',
   alignItems: 'center',
   gap: theme.spacing(6),
+  backgroundColor: 'rgba(0, 0, 0, 0.2)',
+  borderRadius: 3,
 }));

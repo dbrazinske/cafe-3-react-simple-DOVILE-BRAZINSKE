@@ -50,11 +50,7 @@ const HomePage = () => {
             />
           </Box>
           <Box
-            sx={{
-              backgroundColor: 'rgba(0, 0, 0, 0.2)',
-              p: 3,
-              borderRadius: 3,
-            }}
+            sx={{ p: 3 }}
           >
             <Typography
               variant="h6"
